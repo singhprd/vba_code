@@ -14,15 +14,16 @@ Public valid_user_role_inputs As Collection
 Public valid_user_permission_level_inputs As Collection
 Public mySheet As Worksheet
 
-Public niChecker As New RegExp
-Public company_number_checker_eng_and_wales As New RegExp
-Public company_number_checker_scotland As New RegExp
-Public email_address_checker As New RegExp
-Public paye_reference_checker As New RegExp
-Public vat_registration_number_checker As New RegExp
-Public postcode_checker As New RegExp
-Public sort_code_checker As New RegExp
-Public account_number_checker As New RegExp
+' Public niChecker As New RegExp
+' Public company_number_checker_eng_and_wales As New RegExp
+' Public company_number_checker_scotland As New RegExp
+' Public email_address_checker As New RegExp
+' Public paye_reference_checker As New RegExp
+' Public vat_registration_number_checker As New RegExp
+' Public postcode_checker As New RegExp
+' Public sort_code_checker As New RegExp
+' Public account_number_checker As New RegExp
+
 Sub perform_checks_button()
 
     ' Prepare the Constants
@@ -49,7 +50,7 @@ Sub perform_checks_button()
         checkedCompanies.Add CheckRow(row)
     Next row
 
-    Call check_subdomain_uniqueness(checkedCompanies)
+    ' Call check_subdomain_uniqueness(checkedCompanies)
 
 End Sub
 Function CheckRow(row As Integer) As Company

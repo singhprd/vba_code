@@ -71,37 +71,37 @@ Sub runTests()
         ColourCell (column_headers("status"))
     End If
 
-    If check_registration_number = False Then
-        ColourCell (column_headers("registration_number"))
-    End If
+    ' If check_registration_number = False Then
+    '     ColourCell (column_headers("registration_number"))
+    ' End If
 
     If check_initial_vat_frs_type_index = False Then
         ColourCell (column_headers("initial_vat_frs_type_index"))
     End If
 
     ' Check account manager email address
-    If regex_checker(account_manager_email, email_address_checker) = False Then
-        ColourCell (column_headers("account_manager_email"))
-    End If
+    ' If regex_checker(account_manager_email, email_address_checker) = False Then
+    '     ColourCell (column_headers("account_manager_email"))
+    ' End If
 
-    ' Check postcode
-    If regex_checker(postcode, postcode_checker) = False Then
-        ColourCell (column_headers("postcode"))
-    End If
+    ' ' Check postcode
+    ' If regex_checker(postcode, postcode_checker) = False Then
+    '     ColourCell (column_headers("postcode"))
+    ' End If
 
-    ' Check vat_registration_number
-    If regex_checker(vat_registration_number, vat_registration_number_checker) = False Then
-        ColourCell (column_headers("vat_registration_number"))
-    End If
+    ' ' Check vat_registration_number
+    ' If regex_checker(vat_registration_number, vat_registration_number_checker) = False Then
+    '     ColourCell (column_headers("vat_registration_number"))
+    ' End If
 
-    ' Check paye_reference
-    If regex_checker(paye_reference, paye_reference_checker) = False Then
-        ColourCell (column_headers("paye_reference"))
-    End If
+    ' ' Check paye_reference
+    ' If regex_checker(paye_reference, paye_reference_checker) = False Then
+    '     ColourCell (column_headers("paye_reference"))
+    ' End If
 
-    check_bank_accounts
-    check_users
-    check_ni_number
+    'check_bank_accounts
+    ' check_users
+    'check_ni_number
     check_unique_bank_account_names
     check_required_fields_bas_and_users
 
@@ -242,13 +242,13 @@ Function check_email_address(email_address_string As String) As Boolean
     End If
 End Function
 
-Function regex_checker(string_to_check As String, regex As RegExp) As Boolean
-    If string_to_check = "" Then
-        regex_checker = True
-    Else
-        regex_checker = regex.Test(string_to_check)
-    End If
-End Function
+' Function regex_checker(string_to_check As String, regex As RegExp) As Boolean
+'     If string_to_check = "" Then
+'         regex_checker = True
+'     Else
+'         regex_checker = regex.Test(string_to_check)
+'     End If
+' End Function
 Function check_unique_bank_account_names()
     ' TODO
 End Function
@@ -299,3 +299,4 @@ Sub check_required_fields_bas_and_users()
     Next u
 
 End Sub
+

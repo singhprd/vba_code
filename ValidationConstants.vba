@@ -1,86 +1,86 @@
 Sub prepare()
 
-    Dim account_number_checker_string As String
-    account_number_checker_string = ""
-    With account_number_checker
-        .Global = True
-        .MultiLine = False
-        .IgnoreCase = True
-        .Pattern = account_number_checker_string
-    End With
+    ' Dim account_number_checker_string As String
+    ' account_number_checker_string = ""
+    ' With account_number_checker
+    '     .Global = True
+    '     .MultiLine = False
+    '     .IgnoreCase = True
+    '     .Pattern = account_number_checker_string
+    ' End With
 
-    Dim sort_code_checker_string As String
-    sort_code_checker_string = ""
-    With sort_code_checker
-        .Global = True
-        .MultiLine = False
-        .IgnoreCase = True
-        .Pattern = sort_code_checker_string
-    End With
+    ' Dim sort_code_checker_string As String
+    ' sort_code_checker_string = ""
+    ' With sort_code_checker
+    '     .Global = True
+    '     .MultiLine = False
+    '     .IgnoreCase = True
+    '     .Pattern = sort_code_checker_string
+    ' End With
 
-    Dim postcode_checker_string As String
-    postcode_checker_string = ""
-    With postcode_checker
-        .Global = True
-        .MultiLine = False
-        .IgnoreCase = True
-        .Pattern = postcode_checker_string
-    End With
+    ' Dim postcode_checker_string As String
+    ' postcode_checker_string = ""
+    ' With postcode_checker
+    '     .Global = True
+    '     .MultiLine = False
+    '     .IgnoreCase = True
+    '     .Pattern = postcode_checker_string
+    ' End With
 
-    Dim vat_registration_number_checker_string As String
-    vat_registration_number_checker_string = "^([GB])*(([1-9]\d{8})|([1-9]\d{11}))$"
-    With vat_registration_number_checker
-        .Global = True
-        .MultiLine = False
-        .IgnoreCase = True
-        .Pattern = vat_registration_number_checker_string
-    End With
+    ' Dim vat_registration_number_checker_string As String
+    ' vat_registration_number_checker_string = "^([GB])*(([1-9]\d{8})|([1-9]\d{11}))$"
+    ' With vat_registration_number_checker
+    '     .Global = True
+    '     .MultiLine = False
+    '     .IgnoreCase = True
+    '     .Pattern = vat_registration_number_checker_string
+    ' End With
 
-    Dim paye_reference_checker_string As String
-    paye_reference_checker_string = "[0-9]{3}\/[A-Z a-z]{2}[0-9]{5}"
-    With paye_reference_checker
-        .Global = True
-        .MultiLine = False
-        .IgnoreCase = True
-        .Pattern = paye_reference_checker_string
-    End With
+    ' Dim paye_reference_checker_string As String
+    ' paye_reference_checker_string = "[0-9]{3}\/[A-Z a-z]{2}[0-9]{5}"
+    ' With paye_reference_checker
+    '     .Global = True
+    '     .MultiLine = False
+    '     .IgnoreCase = True
+    '     .Pattern = paye_reference_checker_string
+    ' End With
 
-    Dim email_address_checker_string As String
-    email_address_checker_string = "^([a-zA-Z0-9_\-\.]+)@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,5})$"
-    With email_address_checker
-        .Global = True
-        .MultiLine = False
-        .IgnoreCase = True
-        .Pattern = email_address_checker_string
-    End With
+    ' Dim email_address_checker_string As String
+    ' email_address_checker_string = "^([a-zA-Z0-9_\-\.]+)@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,5})$"
+    ' With email_address_checker
+    '     .Global = True
+    '     .MultiLine = False
+    '     .IgnoreCase = True
+    '     .Pattern = email_address_checker_string
+    ' End With
 
-    Dim company_number_checker_eng_and_wales_string As String
-    company_number_checker_eng_and_wales_string = "^[0-9]{8}$"
-    With company_number_checker_eng_and_wales
-        .Global = True
-        .MultiLine = False
-        .IgnoreCase = True
-        .Pattern = company_number_checker_eng_and_wales_string
-    End With
+    ' Dim company_number_checker_eng_and_wales_string As String
+    ' company_number_checker_eng_and_wales_string = "^[0-9]{8}$"
+    ' With company_number_checker_eng_and_wales
+    '     .Global = True
+    '     .MultiLine = False
+    '     .IgnoreCase = True
+    '     .Pattern = company_number_checker_eng_and_wales_string
+    ' End With
 
-    Dim company_number_checker_scotland_string As String
-    company_number_checker_scotland_string = "^[SC]{2}[0-9]{6}$"
-    With company_number_checker_scotland
-        .Global = True
-        .MultiLine = False
-        .IgnoreCase = True
-        .Pattern = company_number_checker_scotland_string
-    End With
+    ' Dim company_number_checker_scotland_string As String
+    ' company_number_checker_scotland_string = "^[SC]{2}[0-9]{6}$"
+    ' With company_number_checker_scotland
+    '     .Global = True
+    '     .MultiLine = False
+    '     .IgnoreCase = True
+    '     .Pattern = company_number_checker_scotland_string
+    ' End With
 
 
-    Dim niRegExString As String
-    niRegExString = "^\s*([a-zA-Z]){2}\s*([0-9]){1}\s*([0-9]){1}\s*([0-9]){1}\s*([0-9]){1}\s*([0-9]){1}\s*([0-9]){1}\s*([a-zA-Z]){1}?$"
-    With niChecker
-        .Global = True
-        .MultiLine = False
-        .IgnoreCase = True
-        .Pattern = niRegExString
-    End With
+    ' Dim niRegExString As String
+    ' niRegExString = "^\s*([a-zA-Z]){2}\s*([0-9]){1}\s*([0-9]){1}\s*([0-9]){1}\s*([0-9]){1}\s*([0-9]){1}\s*([0-9]){1}\s*([a-zA-Z]){1}?$"
+    ' With niChecker
+    '     .Global = True
+    '     .MultiLine = False
+    '     .IgnoreCase = True
+    '     .Pattern = niRegExString
+    ' End With
 
     Set valid_user_permission_level_inputs = New Collection
     valid_user_permission_level_inputs.Add "No Access"
